@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALCAPRI</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <style>
+       html, body {
+            overflow-x: hidden;
+        }
+
+        /* Adjust styles for smaller screens */
+        @media (max-width: 768px) {
+            .nav_bar {
+                margin-left: 0 !important;
+            }
+        }
+
+        .custom-link {
+            transition: padding-bottom 0.01s, border-bottom 0.01s;
+            padding-bottom: 4px;
+        }
+        .custom-link:hover,
+        .custom-link2:hover {
+            border-bottom: 3px solid white;
+        }
+        .custom-link2 {
+            transition: padding-bottom 0.01s, border-bottom 0.01s;
+        }
+        .custom-link2:hover{
+            border-bottom: 3px solid white;
+        }
+        .custom-link:hover {
+            /* padding-bottom: 4px; */
+            border-bottom: 3px solid white;
+        }
+
+        .buttons_group .button_h:hover {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        .button2:hover {
+            background-color: rgb(98, 100, 214) !important;
+            color: white !important;
+        }
+
+        .button3:hover {
+            background-color: rgb(255, 60, 60) !important;
+            color: white !important;
+        }
+
+        .image_border:hover {
+            background-color: white;
+        }
+
+        .image_border span:hover {
+            color: black !important;
+        }
+
+        .clear-float {
+            clear: both;
+            margin: 0;
+            padding: 0;
+        }
+        .strip_content img {
+            width: 100%;
+            max-width: 65px;
+        }
+        .strip_content h2 {
+            margin-top: 0;
+        }
+        @media (max-width: 992px) {
+            .nav_bar {
+                margin-left: 0 !important;
+            }
+
+            .strip_content img {
+                max-width: 55px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .strip_row .col-sm-4{
+                /* flex-direction: column; */
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            .strip_content {
+                margin-bottom: 20px;
+            }
+
+            .sub_strip .col-2 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .mb_view_main{
+                height: 70vh;
+            }
+            .mb-button{
+                border: none; padding: 0px 25px 5px 25px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- header 1 -->
+    <header class="container-fluid bg-dark pe-4 ps-4 pt-2 pb-2">
+        <div class="image_border border border-white ps-3 pe-3 pb-2 me-1 pt-0 rounded-1 float-start">
+            <img src="images/ukflagicon.jpg" alt="flag"><span style="font-size: 13px;" class="text-white"> ENG</span>
+            <!-- <p>This website is operated by ALCAPRI</p> -->
+        </div>
+        <div class="buttons_group float-end">
+            <button style="font-size: 18px; font-weight: 500;"
+                class="button_h border border-white rounded-2 ps-3 pe-3 pb-2 bg-dark text-white me-1">LIVE
+                CHAT</button>
+            <button style="font-size: 18px;" class="me-1 rounded-2 button2 ps-1 pe-2 pb-2 bg-primary text-white">OPEN AN
+                ACCOUNT</button>
+            <button style="font-size: 18px;" class="rounded-2 button3 ps-3 pe-3 pb-2 bg-danger text-white">MEMBER
+                LOGIN</button>
+        </div>
+        <div class="d-inline-block mt-1">
+            <p class="text-white fs-6">This website is operated by ALCAPRI</p>
+        </div>
+    </header>
+    <!-- header 2 -->
+    <header style="border-top: 3px solid black; border-bottom: 3px solid black;"
+        class="container-fluid bg-dark pe-4 ps-4 pt-2 pb-2">
+        <div class="logo float-start me-5">
+            <img width="230" src="images/logo.png" alt="logo">
+        </div>
+        <div style="border-left: 2px solid rgb(104, 103, 103);" class="account float-end me-4 mt-1">
+            <p style="line-height: 30px;" class="ms-4 fs-6 fw-bold text-center text-white">Hello, Sign In <br> <span
+                    style="font-size: 14px;">Your Account</span></p>
+        </div>
+        
+        </button>
+        <div class="nav_bar p-4 mt-0">
+            <ul class="list-unstyled">
+                <li style="margin-left: 220px;" class="d-inline me-3"><a
+                        class="fs-5 text-white text-decoration-none custom-link" href="#">HOME</a></li>
+                <li class="d-inline me-3"><a class=" custom-link fs-5 text-white text-decoration-none"
+                        href="#">PLATFORM</a></li>
+                <li class="d-inline me-3"><a class="custom-link fs-5 text-white text-decoration-none"
+                        href="#">TRADING</a></li>
+                <li class="d-inline me-3"><a class="custom-link fs-5 text-white text-decoration-none" href="#">RESEARCH
+                        & EDUCATION</a></li>
+                <li class="d-inline me-3"><a class="custom-link fs-5 text-white text-decoration-none"
+                        href="#">PROMOTION</a></li>
+                <li class="d-inline me-3"><a class="custom-link fs-5 text-white text-decoration-none" href="#">ABOUT
+                        US</a></li>
+                <li class="d-inline me-3"><a class="custom-link fs-5 text-white text-decoration-none"
+                        href="#">PARTNERSHIPS</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header 3 -->
+    <header class="container-fluid bg-dark p-0 float-start">
+        <div class="ms-4 d-block"
+            style="background-image: url(images/ticker-caption-bg.png);background-repeat: no-repeat; background-size: 250px; height:40px;"
+            class="logo_2">
+            <p class="fs-5 p-1 text-white">Current Rates & Spreads</p>
+        </div>
+        <div style="margin-top: -32px; margin-left:40%;" class="Numbers p-0">
+            <p class="text-white fs-5">EURUSD -<span class="text-danger">Bid: 1.14222 </span>/ <span
+                    style="color: rgb(62, 252, 62);">Ask: 1.14218 </span><span class="text-primary">- Spread: 0.2</span>
+            </p>
+        </div>
+    </header>
+
+    <main
+        style="background-image: url(images/Slide1.jpg); background-size: cover;background-position: right top; padding: 130px 40px 120px 40px; height: 75vh;"
+        class="container-fluid mb_view_main">
+        <div class="content">
+            <h1 style="font-size: 50px;" class="pb-2 text-white">We minimised<br>the cost to maximise your<br>profits</h1>
+            <p class="fs-4 lh-1 text-white">Trade Forex and CFDs with the lowest spreads<br>in the industry</p>
+            <div class="buttons_content">
+                <button style="border: none;"
+                    class="fs-5 me-3  pt-3 pe-4 ps-4 pb-3 ps-1 pe-2 pb-2 bg-primary text-white">OPEN AN ACCOUNT</button>
+                <button style="border: none;" class="fs-5 me-3  pt-3 pe-4 ps-4 pb-3 bg-danger text-white">OPEN A DEMO
+                    ACCOUNT</button>
+            </div>
+        </div>
+    </main>
+    <!-- Strip -->
+    <section class="strip_1 container-fluid bg-dark">
+        <div class="row strip_row">
+            <div style="border-bottom: 1px solid #666666;" class="col-4 col-sm-4">
+                <div class="strip_content pt-4 pb-3 ps-5">
+                    <img width="65" src="images/euro-symbol-png-image-17179.png" alt="euro">
+                    <div style="padding-right: 80px; margin-top: -4px;" class="float-end">
+                        <h2 class="text-white p-0">Cent Account</h2>
+                        <p style="margin-top: -13px;" class="text-white fs-5 p-0">For newbies, risk are 100 times lower.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #c52d2f;" class="col-4 col-sm-4">
+                <div class="strip_content pt-4 pb-3 ps-5">
+                    <img width="65" src="images/checkmark.png" alt="checkmark">
+                    <div style="padding-right: 113px; margin-top: -2px;" class="float-end">
+                        <h2 class="text-white p-0">Leverage 1:2000</h2>
+                        <p style="margin-top: -13px;" class="text-white fs-5 p-0">Highest leverage on the market.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="border-bottom: 1px solid #666666;" class="col-4 col-sm-4">
+                <div class="strip_content pt-2 pb-3 ps-4">
+                    <img class="d-inline-block" style="margin-top: -10px; margin-left: -20px;" class="float-start"
+                        width="99" height="110" src="images/Untitled-1.png" alt="monitor">
+                    <div style="margin-right: 76px; margin-top: 9px;" class="float-end">
+                        <h2 class="text-white p-0">Easy Payment Methods</h2>
+                        <p style="margin-top: -13px;" class="text-white fs-5 p-0">Wide range of global payment methods.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sub Items -->
+        <div style="color: #999999;" class="row sub_strip">
+            <div class="col-2 pt-4">
+                <div style="border-left: 1px solid rgb(104, 103, 103);" class="sub_content text-center pt-0">
+
+                    <img width="45" src="images/document-icon.png" alt="document">
+                    <div>
+                        <h3 class="pt-0 fw-bold fs-4">Open</h3>
+                        <p style="margin-top: -10px;">Trading Account.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 pt-4">
+                <div style="border-left: 1px solid rgb(104, 103, 103);" class="sub_content text-center pt-0">
+
+                    <img width="45" src="images/cloud-download-1.png" alt="download">
+                    <div>
+                        <h3 class="pt-0 fw-bold fs-4">Download</h3>
+                        <p style="margin-top: -10px;">Trading Platform</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 pt-4">
+                <div style="border-left: 1px solid rgb(104, 103, 103);" class="sub_content text-center pt-0">
+
+                    <img style="margin-top: -12px;" width="75" height="70px" src="images/Untitled-1.png" alt="document">
+                    <div style="margin-top: -11px;">
+                        <h3 class="pt-0 fw-bold fs-4">Download</h3>
+                        <p style="margin-top: -10px;">Trading Account.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 pt-4">
+                <div style="border-left: 1px solid rgb(104, 103, 103);" class="sub_content text-center pt-0">
+
+                    <img width="45" src="images/76875.png" alt="image">
+                    <div>
+                        <h3 class="pt-0 fw-bold fs-4">Register</h3>
+                        <p style="margin-top: -10px;">As a Partner.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 pt-4">
+                <div style="border-left: 1px solid rgb(104, 103, 103);" class="sub_content text-center pt-0">
+
+                    <img width="45" src="images/Flag_256x256-32.png" alt="flag">
+                    <div>
+                        <h3 class="pt-0 fw-bold fs-4">Register</h3>
+                        <p style="margin-top: -10px;">As a Partner.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 pt-4">
+                <div style="border-left: 1px solid rgb(104, 103, 103);" class="sub_content text-center pt-0">
+
+                    <img width="45" src="images/13360-200.png" alt="gift">
+                    <div>
+                        <h3 class="pt-0 fw-bold fs-4">Get</h3>
+                        <p style="margin-top: -10px;">More than 30% Bonus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section with images -->
+    <section class="container-fluid">
+        <div class="content_wr text-center mt-5 mb-3">
+            <h2 class="text-dark">Choose a platform that suits your needs</h2>
+            <p class="text-dark">We provide our clients with a wide range of desktop, web and mobile trading platforms,
+                including MetaTrader 4,<br> MetaTrader 5, cTrader and FxPro Edge</p>
+        </div>
+        <div style="padding-top: 100px;" class="left ms-4 float-start">
+            <h3 class="text-dark fw-bold fs-4">We are offering <br><span class="text-danger">MT4,</span> <span
+                    class="text-primary">MT5</span> Platform</h3>
+            <p class="text-dark lh-1">Trade over 1000 instruments. Anywhere, anytime. <br> Forex, CFDs on Stock Indices,
+                Commodities, Stocks, Metals and Energies.</p>
+
+            <button style="border: none; padding: 0px 25px 5px 25px;" class="btn mb-button fs-5 me-3 bg-danger text-white">
+                <img width="50" src="images/icon - Copy.png" alt="icon"
+                    style="margin-left: -26px; margin-bottom: -5px; margin-top: -6px;">
+                <!-- Replace "images/icon - Copy.png" with your image URL -->
+                <p style="margin-left: -8px; margin-bottom: 0; margin-top: 3x;" class="d-inline-block mb-0">VIEW TRADING
+                    PLATFORMS</p>
+            </button>
+
+        </div>
+        <div class="right float-end">
+            <img width="860" src="images/platforms.png" alt="plat">
+        </div>
+    </section>
+    <div class="clear-float"></div>
+    <!-- New Section -->
+    <section style="background-color: #ececec;" class="container-fluid">
+        <div class="content_wr text-center mt-5 mb-3 pt-4">
+            <h2 class="text-dark">Why choose Forex Trading with Alcapri</h2>
+            <p class="text-dark">Alcapri Forex Broker ensures reliable Forex trading conditions to provide traders of
+                all skill levels with an opportunity to earn more.<br>This is possible due to:</p>
+        </div>
+        <div class="container pt-3">
+            <div class="row pb-5">
+                <div class="col-3 text-center">
+                    <img width="60" src="images/tick.png" alt="tick">
+                    <p class="text-black fs-5">No commission on deposits and withdrawals.</p>
+                </div>
+                <div class="col-2 text-center">
+                    <img width="60" src="images/tick.png" alt="tick">
+                    <p class="text-black fs-5">No swaps.</p>
+                </div>
+                <div class="col-3 text-center">
+                    <img width="60" src="images/tick.png" alt="tick">
+                    <p class="text-black fs-5">No SlipPage and Delays.</p>
+                </div>
+                <div class="col-2 text-center">
+                    <img width="60" src="images/tick.png" alt="tick">
+                    <p class="text-black fs-5">24/7 Support.</p>
+                </div>
+                <div class="col-2 text-center">
+                    <img width="60" src="images/tick.png" alt="tick">
+                    <p class="text-black fs-5">24/7 Support.</p>
+                </div>
+            </div>
+    </section>
+    <section style="background-color: #961f21;; box-sizing: border-box;" class="fluid-container">
+        <div class="banner pt-5 pb-5 text-center">
+            <h4 class="text-white fw-bold fs-5">And a lot more.</h4>
+            <h2 class="text-white fw-bold">Calculate the overall profit from Forex trading with Alcapri.</h2>
+        </div>
+    </section>
+    <section style="background-color: #ececec; box-sizing: border-box;" class="fluid-container payment_platforms">
+        <div style="padding-left: 70px;" class="row pt-4 pb-3">
+            <div class="col-1 me-3">
+                <img width="90" src="images/maestro.png" alt="master">
+            </div>
+            <div class="col-1 me-3">
+                <img width="90" src="images/mastercard.png" alt="master_card">
+            </div>
+            <div class="col-1 me-3">
+                <img width="90" src="images/visa.png" alt="master_card">
+            </div>
+            <div class="col-1 me-3">
+                <img width="90" src="images/visa-electron.png" alt="master_card">
+            </div>
+            <div class="col-1 me-3">
+                <img width="90" src="images/bitcoin-icon.png" alt="master_card">
+            </div>
+            <div class="col-1 me-3">
+                <img width="90" src="images/cpu.png" alt="master_card">
+            </div>
+            <div class="col-1 me-3">
+                <img width="90" src="images/fasapay.png" alt="master_card">
+            </div>
+            <div class="col-1 me-3">
+                <img width="90" src="images/neteller.png" alt="master_card">
+            </div>
+            <div class="col-1 me-3">
+                <img width="90" src="images/skrill.png" alt="master_card">
+            </div>
+            <div class="col-1 me-3">
+                <img width="90" src="images/wire-transfer.png" alt="master_card">
+            </div>
+        </div>
+    </section>
+    <footer class="fluid-container bg-dark pt-3 text-white">
+        <div class="left_container float-start ms-3">
+            <div class="social_handles pt-4">
+                <h5>Alcapri at Social media</h5>
+                <div class="social_images">
+                    <button style="border-radius: 5px; padding: 5px 14px 5px 14px; background-color: rgb(67, 67, 253);"
+                        class="btn">
+                        <img width="15" src="images/122-1226568_facebook-f-logo-svg-hd-png-download.png" alt="fb">
+                    </button>
+                    <button style="border-radius: 5px; padding: 6px 6px 6px 6px; background-color: rgb(105, 213, 255);"
+                        class="btn">
+                        <img width="30" src="images/Background.png" alt="fb">
+                    </button>
+                    <button style="border-radius: 5px; padding: 5px 14px 5px 14px; background-color: #c45d5d;"
+                        class="btn">
+                        <img width="15" src="images/122-1226568_facebook-f-logo-svg-hd-png-download.png" alt="fb">
+                    </button>
+                    <button style="border-radius: 5px; padding: 5px 14px 5px 14px; background-color:#c4302b"
+                        class="btn">
+                        <img width="15" src="images/122-1226568_facebook-f-logo-svg-hd-png-download.png" alt="fb">
+                    </button>
+                    <button style="border-radius: 5px; padding: 5px 14px 5px 14px; background-color: #3f729b;"
+                        class="btn">
+                        <img width="15" src="images/122-1226568_facebook-f-logo-svg-hd-png-download.png" alt="fb">
+                    </button>
+                    <button style="border-radius: 5px; padding: 5px 14px 5px 14px; background-color: #00aff0;"
+                        class="btn">
+                        <img width="15" src="images/122-1226568_facebook-f-logo-svg-hd-png-download.png" alt="fb">
+                    </button>
+                    <button style="border-radius: 5px; padding: 5px 14px 5px 14px; background-color: #6699ff;"
+                        class="btn">
+                        <img width="15" src="images/122-1226568_facebook-f-logo-svg-hd-png-download.png" alt="fb">
+                    </button>
+                </div>
+                <div style="width: 60%;" class="content d-inline-block mt-1">
+                    <p>You can start your online forex trading today with Alcapri. Please feel free to browse our economic calender. It contains important information on EURUSD, USDJPY, GBPUSD, USDCHF, EURCHF, AUDUSD, USDCAD, NZDUSD and other currency pairs and trading instruments and provides up-to-date market news and market research. Alcapri offers a deposit forex bonus of up to 50%*. You can trade micro-lots (0.01 lots) with Alcapri. Business license no. 19776 IBC 2011 Registered address: Suite 305, Griffith Corporate Center, Beachmont, Kingstown, St. Vincent and the Grenadines.</p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: -200px; padding-right: 100px;" class="right_container float-end text-center">
+            <h5>Alcapri Trading App</h5>
+            <div class="d-flex pb-2">
+                <a href="#"><img width="180" src="images/playtore.png" alt="play"></a>
+                <a href="#"><img width="180" src="images/appstore.png" alt="app_play"></a>
+            </div>
+            <div class="logo_footer">
+                <img width="320" src="images/logo.png" alt="logo_footer">
+            </div>
+        </div>
+        <div class="fluid-container">
+            <ul style="text-decoration: none; margin-left: -35px;">
+                <li class="list-unstyled d-inline-block fs-5 ms-3 text-white"><a class="custom-link2 text-decoration-none text-white" href="#">HOME</a></li>
+                <li class="custom-link2 list-unstyled d-inline-block fs-5 ms-3 text-white"><a class="text-decoration-none text-white" href="#">TRADING</a></li>
+                <li class="custom-link2 list-unstyled d-inline-block fs-5 ms-3 text-white"><a class="text-decoration-none text-white" href="#">RESEARCH & EDUCATION</a></li>
+                <li class="custom-link2 list-unstyled d-inline-block fs-5 ms-3 text-white"><a class="text-decoration-none text-white" href="#">PROMOTION</a></li>
+                <li class="custom-link2 list-unstyled d-inline-block fs-5 ms-3 text-white"><a class="text-decoration-none text-white" href="#">ABOUT US</a></li>
+                <li class="custom-link2 list-unstyled d-inline-block fs-5 ms-3 text-white"><a class="text-decoration-none text-white" href="#">PARTNERSHIPS</a></li>
+                <div class="caption ms-3 mt-2">
+                    <span>&copy;2018 Alcapri Markets Incorporated</span>
+                </div>
+            </ul>
+           
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

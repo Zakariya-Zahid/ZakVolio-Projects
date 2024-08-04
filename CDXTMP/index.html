@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDXTMP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav style="background-color: var(--banner-color);" class="navbar navbar-expand-lg pt-2">
+        <div class="container">
+            <a class="navbar-brand ms-lg-5" href="#">
+                <span style="color: white; font-size: 25px;font-weight: 600;">CDXTMP</span>
+            </a>
+            <!-- TOOGLE BUTTON- FOR RESPONSIVE PART -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!--REFERENCE: GETBOOTSTRAP-->
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown"> <!--REFERNCE: GETBOOTSTRAP-->
+                <ul class="navbar-nav ms-auto mb-0 mb-lg-0 mt-0">
+                    <li class="nav-item mt-0">
+                        <a style="color:var(--nav-items-color) !important;" class="nav_menus nav-link mx-3 text-dark"
+                            href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav_menus nav-link mx-1 text-dark" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav_menus nav-link mx-1 text-dark" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav_menus nav-link mx-1 text-dark" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav_menus nav-link mx-1 text-dark" href="#">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="drop_link nav-link dropdown-toggle mx-0" href="#" id="drop" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Drop Down
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="drop">
+                            <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                            <li><a class="dropdown-item" href="#">Deep Drop Down</a></li>
+                            <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                            <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                            <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav_menus nav-link mx-3 text-dark" href="#">Contact</a>
+                    </li>
+                    <li>
+                        <button class="header_btn toogle_btn">
+                            Get Started
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <main class="container-fluid banner_ct">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 content_banner">
+                    <h2 class="cb_heading">Better Solutions For Your <br>Business</h2>
+                    <p class="cb_para">We are team of talented designers making websites with Bootstrap</p>
+                    <div class="btn_wrapper d-flex gap-3">
+                        <button class="cb_btn toogle_btn">
+                            Get Started
+                        </button>   
+                        <div class="d-flex justify-content-center gap-2 mt-1">
+                            <div>
+                                <img width="33" src="Images/icons8-play-video-100.png" alt="">
+                            </div>
+                            <div class="mt-1">
+                                <a style="color: white; text-decoration: none;" href="#watch">Watch Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 banner-ct_img">
+                    <img style="width: 490px;" src="Images/hero-img.png" alt="hero-img">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Clients section -->
+    <section id="brands_strip" class="container-fluid">
+        <div class="container">
+            <div class="row strip_wrapper_row">
+                <div class="col-lg-2 col-md-3 col-sm-3 strip_wrapper_col">
+                    <img src="Images/clients/client-1.png" alt="c1">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12` strip_wrapper_col">
+                    <img src="Images/clients/client-2.png" alt="c2">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12` strip_wrapper_col">
+                    <img src="Images/clients/client-3.png" alt="c3">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12` strip_wrapper_col">
+                    <img src="Images/clients/client-4.png" alt="c4">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12` strip_wrapper_col">
+                    <img src="Images/clients/client-5.png" alt="c5">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12` strip_wrapper_col">
+                    <img src="Images/clients/client-6.png" alt="c6">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section -->
+
+    <section id="about" class="container-fluid">
+        <div class="about_heading_wr mb-3">
+            <h4 class="about_h4">ABOUT US</h4>
+        </div>
+        <div class="container about_text">
+            <div class="row mb-3">
+                <div class="col-lg-6">
+                    <p class="about_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="tick_wr">
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-all.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p">Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-all.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p">Duis aute irure dolor in reprehenderit in voluptate velit</p>
+                        </div>
+                        <div class="tick_wr">
+                            <div class="tick1 d-flex align-items-center">
+                                <div><img src="Images/check-all.svg" alt="tick" class="me-2"></div>
+                                <p class="m-0 tick_p">Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content_wr_r_about">
+                        <div class="div_content_p">
+                            <p>
+                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                            </p>
+                        </div>
+                        <div class="cta">
+                            <button class="about_cta_btn">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Accordion section -->
+    <section id="accordion_section" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 accordion_content">
+                <div class="acc_head">
+                    <h3 class="acc_head_h3">Eum ipsam laborum deleniti <span class="acc_head_span">velit pariatur
+                            architecto aut nihil</span></h3>
+                    <p class="acc_head_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.<br>Duis aute irure dolor in reprehenderit</p>
+                </div>
+                <div class="acc_body">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <span class="acc_num">01</span>&nbsp;&nbsp;<span class="acc_title">Non consectetur a
+                                        erat nam at lectus urna duis?</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida.<br>Venatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <span class="acc_num">02</span>&nbsp;&nbsp;<span class="acc_title">Feugiat
+                                        scelerisque varius morbi enim nunc?</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida.<br>Venatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <span class="acc_num">03</span>&nbsp;&nbsp;<span class="acc_title">Dolor sit amet
+                                        consectetur adipiscing elit?</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida.<br>Venatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 why_us_wr">
+                <img src="Images/why-us.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- TECHNOLOGIES SECTION -->
+    <section id="technologies" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 tech_img">
+                    <img src="Images/skills.png" alt="skills">
+                </div>
+                <div class="col-lg-6">
+                    <div class="tech_content">
+                        <h2 class="tech_content_h2">Voluptatem dignissimos provident quasi corporis voluptates</h2>
+                        <p class="progress_content_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="progress_wr">
+                        <div class="progress_content">
+                            <div class="d-flex justify-content-between title_per">
+                                <div>HTML</div>
+                                <div>100%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow=""
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress_content">
+                            <div class="d-flex justify-content-between title_per">
+                                <div>CSS</div>
+                                <div>90%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress_content">
+                            <div class="d-flex justify-content-between title_per">
+                                <div>JAVASCRIPT</div>
+                                <div>75%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress_content">
+                            <div class="d-flex justify-content-between title_per">
+                                <div>PHOTOSHOP</div>
+                                <div>55%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES SECTION -->
+    <section class="container-fluid" id="services">
+        <div class="container">
+            <div class="services_content">
+                <div class="service_heading_wr mb-3">
+                    <h4 class="service_h4">SERVICES</h4>
+                    <p class="service_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reprehenderit rerum
+                        delectus nam quaerat nisi dolor sapiente ullam repellat adipisci consequatur tenetur natus
+                        deserunt est praesentium obcaecati mollitia iste, nesciunt illo quam nulla ratione. Voluptatum?.
+                    </p>
+                </div>
+            </div>
+            <div class="services_card_wr">
+                <div class="row card_flex">
+                    <div class="col-lg-3 col-md-4 col-sm-12 card_design ">
+                        <div class="service_card_wr">
+                            <div class="res_img_ser">
+                                <img width="25" src="Images/globe-solid.svg" alt="globe-solid">
+                            </div>
+                            <div class="card_content">
+                                <h4 class="service_h4">Lorem Ipsum</h4>
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                                    accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 card_design">
+                        <div class="service_card_wr">
+                            <div>
+                                <img width="20" src="Images/file-lines-regular (1).svg" alt="globe-solid">
+                            </div>
+                            <div class="card_content">
+                                <h4 class="service_h4">Lorem Ipsum</h4>
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                                    accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 card_design">
+                        <div class="service_card_wr">
+                            <div>
+                                <img width="24" src="Images/gauge-simple-high-solid.svg" alt="globe-solid">
+                            </div>
+                            <div class="card_content">
+                                <h4 class="service_h4">Lorem Ipsum</h4>
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                                    accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 card_design">
+                        <div class="service_card_wr">
+                            <div>
+                                <img width="25" src="Images/layer-group-solid.svg" alt="globe-solid">
+                            </div>
+                            <div class="card_content">
+                                <h4 class="service_h4">Lorem Ipsum</h4>
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                                    accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="BOX">
+        <section class="container-fluid" id="call_to_action">
+
+            <div class="container">
+                <div class="main_container row">
+                    <div class="col-lg-10">
+                        <div class="content_call_to_action">
+                            <h3 class="cta_h3">Call To Action</h3>
+                            <p class="cta_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde
+                                tempora, cupiditate accusantium eum earum numquam facere. Quam earum beatae consequatur
+                                aliquam reiciendis sunt!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="d-flex justify-content-start flex-column align-items-center cta_wr">
+                            <button class="cta_btn toogle_btn">
+                                Call to Action
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!-- Portfolio section -->
+        <section class="container-fluid" id="Portfolio">
+            <div class="container">
+                <div class="service_heading_wr mt-5">
+                    <h3 class="service_h4">Portfolio</h3>
+                    <p class="service_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde
+                        tempora, cupiditate accusantium eum earum numquam facere. Quam earum beatae consequatur
+                        aliquam reiciendis sunt!</p>
+                </div>
+                <div class="tabs d-flex gap-5 justify-content-center">
+                    <p><a style="text-decoration: none;" href="#" class="tab_tab">All</a></p>
+                    <p><a style="text-decoration: none;" href="#">App</a></p>
+                    <p><a style="text-decoration: none;" href="#">Card</a></p>
+                    <p><a style="text-decoration: none;" href="#">Web</a></p>
+                </div>
+                <!-- Not Completed :(   -->
+            </div>
+        </section>
+    <!-- TEAM SECTION -->
+    <section class="container-fluid" id="team">
+        <div class="container">
+            <div class="team_content">
+                <div class="team_heading_wr">
+                    <h4 class="team_h4">TEAM</h4>
+                    <div class="hr_lines d-flex justify-content-center">
+                        <hr width="30" style="background-color:#444546;color:#444546 !important;">
+                        <hr width="40"
+                            style="height: 3px;background-color: #032e79 !important; color: #032e79 !important;">
+                        <hr width="30" style="background-color:#444546;color:#444546 !important;">
+                    </div>
+                    <p class="team_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reprehenderit rerum
+                        delectus nam quaerat nisi dolor sapiente ullam repellat adipisci consequatur tenetur natus
+                        deserunt est praesentium obcaecati mollitia iste, nesciunt illo quam nulla ratione. Voluptatum?.
+                    </p>
+                </div>
+            </div>
+            <div class="row team_flex">
+                <div class="col-lg-6 col-md-3 col-sm-12 card_main_wr">
+                    <div class="wrapper_team_card">
+                        <div class="image_card">
+                            <img src="Images/team/team-1.jpg" alt="team-1">
+                        </div>
+                        <div class="card_content">
+                            <h4 class="card_h4">Walter White</h4>
+                            <p class="card_p_1">Chief Executive Officer</p>
+                            <hr width="44">
+                            <p class="card_p_2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis</p>
+                            <div class="social_handles">
+                                <!-- twitter -->
+                                <a href="#social"><img class="" src="Images/twitter.svg" alt="twitter"></a>
+                                <!-- facebook -->
+                                <a href="#social"><img class="" src="Images/facebook.svg" alt="facebook"></a>
+                                <!-- instagram -->
+                                <a href="#social"><img class="" src="Images/instagram.svg" alt="instagram"></a>
+                                <!-- linkedin -->
+                                <a href="#social"><img class="" src="Images/linkedin.svg" alt="linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-3 col-sm-12 card_main_wr">
+                    <div class="wrapper_team_card">
+                        <div class="image_card">
+                            <img src="Images/team/team-2.jpg" alt="team-2">
+                        </div>
+                        <div class="card_content">
+                            <h4 class="card_h4">Sarah <span class="fs-5">J</span>honson</h4>
+                            <p class="card_p_1">Product Mangager</p>
+                            <hr width="44">
+                            <p class="card_p_2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis</p>
+                            <div class="social_handles">
+                                <!-- twitter -->
+                                <a href="#social"><img src="Images/twitter.svg" alt="twitter"></a>
+                                <!-- facebook -->
+                                <a href="#social"><img src="Images/facebook.svg" alt="facebook"></a>
+                                <!-- instagram -->
+                                <a href="#social"><img src="Images/instagram.svg" alt="instagram"></a>
+                                <!-- linkedin -->
+                                <a href="#social"><img src="Images/linkedin.svg" alt="linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-3 col-sm-12 card_main_wr">
+                    <div class="wrapper_team_card">
+                        <div class="image_card">
+                            <img src="Images/team/team-3.jpg" alt="team-3">
+                        </div>
+                        <div class="card_content">
+                            <h4 class="card_h4">William Anderson</h4>
+                            <p class="card_p_1">CTO</p>
+                            <hr width="44">
+                            <p class="card_p_2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis</p>
+                            <div class="social_handles">
+                                <!-- twitter -->
+                                <a href="#social"><img src="Images/twitter.svg" alt="twitter"></a>
+                                <!-- facebook -->
+                                <a href="#social"><img src="Images/facebook.svg" alt="facebook"></a>
+                                <!-- instagram -->
+                                <a href="#social"><img src="Images/instagram.svg" alt="instagram"></a>
+                                <!-- linkedin -->
+                                <a href="#social"><img src="Images/linkedin.svg" alt="linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-3 col-sm-12 card_main_wr">
+                    <div class="wrapper_team_card">
+                        <div class="image_card">
+                            <img src="Images/team/team-4.jpg" alt="team-4">
+                        </div>
+                        <div class="card_content">
+                            <h4 class="card_h4">Amanda <span class="fs-5">J</span>epson</h4>
+                            <p class="card_p_1">Product Mangager</p>
+                            <hr width="44">
+                            <p class="card_p_2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis</p>
+                            <div class="social_handles">
+                                <!-- twitter -->
+                                <a href="#social"><img src="Images/twitter.svg" alt="twitter"></a>
+                                <!-- facebook -->
+                                <a href="#social"><img src="Images/facebook.svg" alt="facebook"></a>
+                                <!-- instagram -->
+                                <a href="#social"><img src="Images/instagram.svg" alt="instagram"></a>
+                                <!-- linkedin -->
+                                <a href="#social"><img src="Images/linkedin.svg" alt="linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="container-fluid" id="pricing_section">
+        <div class="container">
+            <div class="pricing_content">
+                <h2 class="pricing_h2">PRICING</h2>
+                <p class="pricing_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem totam quo
+                    minima eaque vel natus, ipsa nemo eos quis eligendi a facilis tempore, possimus nihil sed, debitis
+                    vitae harum distinctio? Placeat facere amet labore eum?</p>
+            </div>
+            <div class="row d-flex justify-content-center gap-3">
+                <div class="col-lg-4 col-md-3 col-sm-12 card_pricing">
+                    <div class="card_title_cn">
+                        <h5 class="mb-3" style="color:#38393a; font-family: Poppins-medium;">Free Plan</h5>
+                        <div class="Price">
+                            <h2><span class="dollar">$</span><span class="amount">0</span>
+                                <p class="text-primary fs-5 fw-bold per_month">per month</p>
+                        </div>
+                    </div>
+                    <div class="features_Wr">
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p" style="color:#717375">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p" style="color:#717375">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p" style="color:#717375">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/xmark-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p text-decoration-line-through">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/xmark-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p text-decoration-line-through">Quam adipiscing vitae proin</p>
+                        </div>
+                    </div>
+                    <div class="button_pricing">
+                        <button class="pricing_btn toogle_btn mt-4 res_price_btn">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-12 card_pricing_2">
+                    <div class="card_title_cn">
+                        <h5 class="mb-3" style="color:#38393a; font-family: Poppins-medium;">Business Plan</h5>
+                        <div class="Price">
+                            <h2><span class="dollar">$</span><span class="amount">29</span>
+                                <p class="text-primary fs-5 fw-bold  per_month">per month</p>
+                        </div>
+                    </div>
+                    <div class="features_Wr">
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p" style="color:#717375">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p" style="color:#717375">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p" style="color:#717375">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p">Quam adipiscing vitae proin</p>
+                        </div>
+                    </div>
+                    <div class="button_pricing">
+                        <button class="pricing_btn_2 toogle_btn mt-4 res_price_btn_2">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-12 card_pricing">
+                    <div class="card_title_cn">
+                        <h5 class="mb-3" style="color:#38393a; font-family: Poppins-medium;">Developer Plan</h5>
+                        <div class="Price">
+                            <h2><span class="dollar">$</span><span class="amount">49</span>
+                                <p class="text-primary fs-5 fw-bold per_month">per month</p>
+                        </div>
+                    </div>
+                    <div class="features_Wr">
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p" style="color:#717375">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p" style="color:#717375">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p" style="color:#717375">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p">Quam adipiscing vitae proin</p>
+                        </div>
+                        <div class="tick1 d-flex align-items-center">
+                            <div><img src="Images/check-solid.svg" alt="tick" class="me-2"></div>
+                            <p class="m-0 tick_p">Quam adipiscing vitae proin</p>
+                        </div>
+                    </div>
+                    <div class="button_pricing">
+                        <button class="pricing_btn toogle_btn mt-4 res_price_btn">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION -->
+    <section class="container-fluid" id="FAQ_section">
+        <div class="container">
+            <div class="faq_title">
+                <h2 class="heading_faq">FREQUENTLY ASKED QUESTIONS</h2>
+                <p class="faq_p">J'ai les porteurs clabaudeurs et moi braises, nager les qu'on langueurs sans les,
+                    carcasse drapeaux des peuple d'or falots d'eau quand vu, froide femme quand rousseurs impassibles
+                    dans. Et troupeaux de pantheres pourrit parfums l'assaut courus fois.</p>
+            </div>
+            <div class="accordion_faq">
+                <div class="acc_body_faq">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <span class="acc_num"><img class="img_acc_2" src="Images/circle-question-regular.svg"
+                                            alt=""></span>&nbsp;&nbsp;<span class="acc_title"
+                                        style="color: #37517e; font-weight: 600;">Non consectetur a erat nam at lectus
+                                        urna duis?</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida.<br>Venatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <span class="acc_num"><img class="img_acc_2" src="Images/circle-question-regular.svg"
+                                            alt=""></span>&nbsp;&nbsp;<span class="acc_title"
+                                        style="color: #37517e; font-weight: 600;">Feugiat scelerisque varius morbi enim
+                                        nunc?</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida.<br>Venatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <span class="acc_num"><img class="img_acc_2" src="Images/circle-question-regular.svg"
+                                            alt=""></span>&nbsp;&nbsp;<span class="acc_title"
+                                        style="color: #37517e; font-weight: 600;">Dolor sit
+                                        amet consectetur adipiscing elit?</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida.<br>Venatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    <span class="acc_num"><img class="img_acc_2" src="Images/circle-question-regular.svg"
+                                            alt=""></span>&nbsp;&nbsp;<span class="acc_title"
+                                        style="color: #37517e; font-weight: 600;">Besitze mild seh versuch mich ihr
+                                        hören euch?</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida.<br>Venatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    <span class="acc_num"><img class="img_acc_2" src="Images/circle-question-regular.svg"
+                                            alt=""></span>&nbsp;&nbsp;<span class="acc_title"
+                                        style="color: #37517e; font-weight: 600;">Despenada los un heridas la en
+                                        no?</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida.<br>Venatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION -->
+
+    <section class="container-fluid" id="contact_section">
+        <div class="container">
+            <div class="contact_content">
+                <h2 class="heading_faq fs-3">CONTACT</h2>
+                <p class="faq_p">J'ai les porteurs clabaudeurs et moi braises, nager les qu'on langueurs sans les,
+                    carcasse drapeaux des peuple d'or falots d'eau quand vu, froide femme quand rousseurs impassibles
+                    dans. Et troupeaux de pantheres pourrit parfums l'assaut courus fois.</p>
+            </div>
+            <div class="row d-flex justify-content-center gap-4">
+                <div class="col-lg-4 col-md-12 col-sm-12 contact_card">
+                    <div class="contact_card_content">
+                        <div class="wrapper_flex">
+                            <div class="image">
+                                <img src="Images/Group 11.svg" alt="">
+                            </div>
+                            <div class="image_content">
+                                <h4 class="contact_h4">Location:</h4>
+                                <p class="contact_p">A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div>
+                        <div class="wrapper_flex">
+                            <div class="image">
+                                <img src="Images/Group 5.svg" alt="">
+                            </div>
+                            <div class="image_content">
+                                <h4 class="contact_h4">Email:</h4>
+                                <p class="contact_p">info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="wrapper_flex">
+                            <div class="image">
+                                <img src="Images/Group 8.svg" alt="">
+                            </div>
+                            <div class="image_content">
+                                <h4 class="contact_h4">Call:</h4>
+                                <p class="contact_p">+1 558 955-4885</p>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <iframe class="iframe_map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.445857964623!2d-74.0061377!3d40.7100586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2s!4v1711557829338!5m2!1sen!2s"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 contact_form">
+                    <div class="form_wrapper">
+                        <div class="name_email">
+                            <div class="name">
+                                <div class="label_name"><label for="name">Your Name</label></div>
+                                <input type="text" name="fname" id="fname">
+                            </div>
+                            <div class="email">
+                                <div class="label_name"><label for="name">Your Email</label></div>
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="other_form_content">
+                            <!-- Subject -->
+                            <div class="label_name"><label for="name">Subject</label></div>
+                            <input type="text" name="fname" id="fname" class="subject">
+                            <!-- Message -->
+                            <div class="label_name your_email"><label for="name">Message</label></div>
+                            <textarea name="message" id="" cols="30" rows="10"></textarea>
+                            <!-- Send Message -->
+                            <div class="send_message">
+                                <button class="form_btn toogle_btn">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Section -->
+
+    <section class="container-fluid" id="newsletter_section">
+        <div class="content_news text-center">
+            <h4 class="h4_news">Join Our Newsletter</h4>
+            <p class="para_news">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nihil sequi fuga.</p>
+            <div class="news_field d-flex justify-content-center">
+                <input type="email" class="news_email">
+                <button class="toogle_btn news_btn">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid w-100">
+        <div class="container-fluid pb-5 pt-3">
+            <!-- Footer -->
+            <footer class="text-center text-lg-start text-white">
+               
+                <div class="container p-4 pb-0 res_ft_con">
+                   
+                    <section class="">
+                   
+                        <div class="row">
+                    
+                            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3 res_ft">
+                                <h4 class="text-uppercase mb-1 font-weight-bold h4_foot">
+                                    CDXTMP
+                                </h4>
+                                <p class="link_foot">
+                                    A108 Adam Street, New York, NY 535022 United States
+                                </p>
+                                <div class="phone_email">
+                                    <p style="font-size: 13px;color: #717375;"><span style="font-weight: 700; font-size: 13px;color: #333333;">Phone:</span> +1 558 955-4885</p>
+                                    <p style="font-size: 13px;color: #717375;"><span style="font-weight: 700; font-size: 13px;color: #333333;">Email:</span> info@example.com</p>
+                                </div>
+                            </div>
+            
+    
+                            <div class="col-md-6 col-lg-3 col-xl-2 mx-auto mt-3 res_ft">
+                                <h6 class="mb-3 font-weight-bold h6_foot">Useful Links</h6>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">Home</a>
+                                </p>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">About us</a>
+                                </p>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">Service</a>
+                                </p>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">Terms of service</a>
+                                </p>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">Privacy policy</a>
+                                </p>
+                            </div>
+                            
+    
+                            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3 res_ft">
+                                <h6 class="mb-3 font-weight-bold h6_foot">Contact</h6>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">Web Design</a>
+                                </p>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">Web Development</a>
+                                </p>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">Product Management</a>
+                                </p>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">Marketing</a>
+                                </p>
+                                <p class="d-flex gap-2">
+                                    <img src="Images/Footer social icons/greater-than-solid.svg" alt="">
+                                    <a href="#link_foot" class="link_foot">Graphic Design</a>
+                                </p>
+                            </div>
+                         
+    
+                            
+                            <div class="col-md-6 col-lg-3 col-xl-4 mx-auto mt-3 res_ft">
+                                <h6 class="mb-3 font-weight-bold h6_foot">Our Social Networks</h6>
+                                <p class="p_foot">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                
+                                <div class="social_handles_ft d-flex gap-2">
+                                    <div>
+                                        <a class="social_link" href="#!" role="button"><img class="img_ft_res" src="Images/Footer social icons/twitter.svg" alt=""></a>
+                                    </div>
+                                    <div>
+                                        <a class="social_link" href="#!" role="button"><img class="img_ft_res" src="Images/Footer social icons/facebook-f.svg" alt=""></a>
+                                    </div>
+                                    <div>
+                                        <a class="social_link" href="#!" role="button"><img class="img_ft_res" src="Images/Footer social icons/instagram.svg" alt=""></a>
+                                    </div>
+                                    <div>
+                                        <a class="social_link" href="#!" role="button"><img class="img_ft_res" src="Images/Footer social icons/skype (1).svg" alt=""></a>
+                                    </div>
+                                    <div>
+                                        <a class="social_link" href="#!" role="button"><img class="img_ft_res" src="Images/Footer social icons/linkedin-in.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                 
+                    </section>
+                   
+                </div>
+                
+            </footer>
+        </div>
+    </section>
+    
+    <!-- Copyright -->
+    <div class="text-center pt-4 pb-2" style="background-color:#31476e;">
+        <div class="container">
+            <div class="copyright_wr d-flex justify-content-between text-white row">
+                <p class="col-lg-6 col-md-6 col-sm-12 p_cap" style="font-size: 15px;font-family: Poppins-regular;">&copy;
+                    Copyright <span style="font-weight: 600;">CDXTMP.</span> All Right Reserved.</p>
+                <p class="col-lg-6 col-md-6 col-sm-12 p_cap" style="font-size: 15px;font-family: Poppins-regular;">Desgined By
+                    <span style="color: #6ba1ff;">Shehryar</span></p>
+            </div>
+        </div>
+    </div>
+    
+    </footer>
+   
+    </div>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
