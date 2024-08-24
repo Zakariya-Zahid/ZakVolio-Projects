@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer</title>
+    <link rel="icon" href="sentiment-analysis.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body >
+    <section>
+        <div class="container">
+            <header>
+                <h1>Sentiment Analyzer</h1>
+                <p>Analyze the sentiment of any text instantly</p>
+            </header>
+            <main>
+                <form id="sentiment-form">
+                    <textarea id="text-input" placeholder="Enter your text here..." required></textarea>
+                    <div class="btn_wrapper">
+                        <button type="submit">Analyze</button>
+                    </div>
+                    
+                </form>
+                <div id="result" class="hidden">
+                    <h2>Analysis Result</h2>
+                    <div id="sentiment-display"></div>
+                    <div id="score-display"></div>
+                </div>
+                <div id="loading" class="hidden">Analyzing...</div>
+            </main>
+            <footer>
+                <p>&copy; 2024 Sentiment Analyzer. Made by Zakariya Bukhari</p>
+            </footer>
+        </div>
+       </section>
+   
+    
+       <script src="/static/script.js"></script>
+</body>
+</html>
